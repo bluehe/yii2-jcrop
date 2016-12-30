@@ -8,7 +8,7 @@
  * @version 1.0.0
  */
 
-namespace newerton\jcrop;
+namespace bluehe\jcrop;
 
 use yii\base\Widget;
 use yii\helpers\Html;
@@ -120,9 +120,9 @@ class jCrop extends Widget {
 
     /**
      * Get the HTML options for the buttons.
-     * 
+     *
      * @param string $name button name
-     * @return array HTML options 
+     * @return array HTML options
      */
     protected function getHtmlOptions($name, $display = 'none') {
         if (isset($this->buttons[$name]['htmlOptions'])) {
