@@ -82,12 +82,12 @@ class jCrop extends Widget {
             $output .= '</div>';
         }
 
-        $output .= Html::hiddenInput($this->id . '_x', 0, ['class' => 'coords', 'id' => $this->id . '_x']);
-        $output .= Html::hiddenInput($this->id . '_y', 0, ['class' => 'coords', 'id' => $this->id . '_y']);
-        $output .= Html::hiddenInput($this->id . '_w', 0, ['class' => 'coords', 'id' => $this->id . '_w']);
-        $output .= Html::hiddenInput($this->id . '_h', 0, ['class' => 'coords', 'id' => $this->id . '_h']);
-        $output .= Html::hiddenInput($this->id . '_x2', 0, ['class' => 'coords', 'id' => $this->id . '_x2']);
-        $output .= Html::hiddenInput($this->id . '_y2', 0, ['class' => 'coords', 'id' => $this->id . '_y2']);
+        $output .= Html::hiddenInput($this->id . '[x]', 0, ['class' => 'coords', 'id' => $this->id . '_x']);
+        $output .= Html::hiddenInput($this->id . '[y]', 0, ['class' => 'coords', 'id' => $this->id . '_y']);
+        $output .= Html::hiddenInput($this->id . '[w]', 0, ['class' => 'coords', 'id' => $this->id . '_w']);
+        $output .= Html::hiddenInput($this->id . '[h]', 0, ['class' => 'coords', 'id' => $this->id . '_h']);
+        $output .= Html::hiddenInput($this->id . '[x2]', 0, ['class' => 'coords', 'id' => $this->id . '_x2']);
+        $output .= Html::hiddenInput($this->id . '[y2]', 0, ['class' => 'coords', 'id' => $this->id . '_y2']);
 
         echo $output;
 
